@@ -19,6 +19,5 @@ describe 'When a user visits the root page' do
     # And I should see a name and id for each student.
     expect(page).to have_content('Name: Name')
     expect(page).to have_content('Id: 1')
-
   end
 end

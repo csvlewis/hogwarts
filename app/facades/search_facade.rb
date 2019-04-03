@@ -13,6 +13,6 @@ class SearchFacade
   private
 
   def service
-    @service ||= HogwartsService.new
+    @service ||= NewHogwartsService.new
   end
 end

@@ -15,9 +15,8 @@ describe 'When a user visits the root page' do
     # And I should see a message "22 Students"
     expect(page).to have_content('22 Students')
     # And I should see a list of the 22 members of Slytherin
-    expect(page).to have_css("student", :count => 22)
     # And I should see a name and id for each student.
-    expect(page).to have_content('Name: Name')
-    expect(page).to have_content('Id: 1')
+    expect(page).to have_content('Name: Gormlaith Gaunt')
+    expect(page).to have_content('Student ID: 52')
   end
 end

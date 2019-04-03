@@ -14,7 +14,7 @@ describe SearchFacade do
         facade = SearchFacade.new('Slytherin')
 
         expect(facade.students).to be_a(Array)
-        expect(facade.students.count).to eq(22)
+        expect(facade.students).to eq(22)
         expect(facade.students[0]).to be_a(Student)
       end
     end

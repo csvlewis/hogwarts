@@ -11,7 +11,7 @@ describe 'When a user visits the root page' do
     # And I click on "Get Students"
     click_button 'Get Students'
     # Then my path should be "/search" with "house=slytherin" in the parameters
-    expect(current_path).to eq('/search')
+    expect(page).to have_current_path("/search?utf8=%E2%9C%93&house=Slytherin&commit=Get+Students")
     # And I should see a message "22 Students"
     expect(page).to have_content('22 Students')
     # And I should see a list of the 22 members of Slytherin
